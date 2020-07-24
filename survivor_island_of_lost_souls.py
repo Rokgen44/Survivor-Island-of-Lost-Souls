@@ -152,9 +152,9 @@ def pre_merge():
     vote_forfeit = input("Would anyone like to give up their vote for a token?")
     if vote_forfeit == "yes":
         vote_for_num = int(input("How many?"))
-    for givers in range(vote_for_num):
-        forfeitter = input("Write the name of the person giving up their vote. 'Specifically how it was written originally' ")
-        tokens[forfeitter] += 1
+        for givers in range(vote_for_num):
+            forfeitter = input("Write the name of the person giving up their vote. 'Specifically how it was written originally' ")
+            tokens[forfeitter] += 1
     voters = int(input("How many people are voting?"))
 
     tallies = []
@@ -304,9 +304,9 @@ def merge():
     vote_forfeit = input("Would anyone like to give up their vote for a token?")
     if vote_forfeit == "yes":
         vote_for_num = int(input("How many?"))
-    for givers in range(vote_for_num):
-        forfeitter = input("Write the name of the person giving up their vote.")
-        tokens[forfeitter] += 1
+        for givers in range(vote_for_num):
+            forfeitter = input("Write the name of the person giving up their vote.")
+            tokens[forfeitter] += 1
     voters = int(input("How many people are voting?"))
 
     tallies = []
